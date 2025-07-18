@@ -204,17 +204,17 @@ document.addEventListener('touchstart', function(e) {
     touchStartY = e.touches[0].clientY;
 });
 
-document.addEventListener('touchmove', function(e) {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const currentY = e.touches[0].clientY;
+// document.addEventListener('touchmove', function(e) {
+//     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+//     const currentY = e.touches[0].clientY;
 
-    // Nếu đang ở top và kéo xuống => chặn bounce
-    if (scrollTop === 0 && currentY > touchStartY) {
-        e.preventDefault();
-    }
+//     // Nếu đang ở top và kéo xuống => chặn bounce
+//     if (scrollTop === 0 && currentY > touchStartY) {
+//         e.preventDefault();
+//     }
 
-    touchStartY = currentY; // Cập nhật lại để không bị lệch lần sau
-}, { passive: false });
+//     touchStartY = currentY; // Cập nhật lại để không bị lệch lần sau
+// }, { passive: false });
 
 // Performance optimization: throttle scroll events
 let ticking = false;
