@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Linh Yêu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background hearts animation -->
+    <div class="floating-hearts">
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💝</div>
+        <div class="heart">🌹</div>
+        <div class="heart">✨</div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <header class="header scroll-reveal">
+            <h1>Chúc Mừng Sinh Nhật Em Yêu</h1>
+            <p class="subtitle">Một ngày đặc biệt dành riêng cho người đặc biệt nhất</p>
+        </header>
+
+        <!-- Love letter section -->
+        <section class="letter-section scroll-reveal">
+            <div class="love-letter" id="loveLetter">
+                <div class="envelope">
+                    <div class="letter-icon">💌</div>
+                    <p class="letter-prompt">Nhấn để mở thư tình...</p>
+                </div>
+                <div class="letter-content" id="letterContent">
+                    <div class="letter-text">
+                        <h2>Gửi người con gái tuyệt vời nhất</h2>
+                        <p>Em thân yêu,</p>
+                        <p>Linh ơi Linh à, ngày hôm nay là sinh nhật em, và em là ngoại lệ duy nhất anh chúc sinh nhật một người không phải vì lịch hay Facebook nhắc, mà vì trong đầu anh ngày này có lời nhắc riêng.</p>
+                        <p>Anh không chúc em sẽ mãi vui hay lúc nào cũng mạnh mẽ, vì anh biết: không ai vui mãi được, và cũng không cần mạnh mẽ hoài làm gì. Anh chỉ chúc, vào những ngày em cảm thấy nhỏ bé nhất, sẽ có ai đó đủ kiên nhẫn ngồi xuống cùng em mà không ép em phải tỏ ra ổn, mà thôi, người đó là anh rồi.</p>
+                        <p>Mong em vẫn sẽ dịu dàng với thế giới, nhưng đừng quên kiêu hãnh vì bản thân. Vẫn yêu anh hết mình, nhưng đừng yêu mù quáng. Vẫn khóc nếu em cần, nhưng đã có bờ vai anh đây. </p>
+                        <p>Đôi lúc, anh cũng yếu đuối, vì anh không thể nào mạnh mẽ suốt ngày được. Và anh rất biết ơn, khi em là chỗ dựa tinh thần cho anh, để anh được cho đứa trẻ con trong tim anh được sống lại, được nô đùa, được là chính mình. Mỗi lần như vậy, anh lại yêu em nhiều hơn nữa.</p>
+                        <p>Có thể anh không hoàn hảo, nhưng chắc chắn là người phù hợp nhất để yêu em kiểu không hời hợt. Nên hôm nay, anh không chỉ chúc mừng ngày em sinh ra, mà còn cảm ơn ngày đó, vì từ hôm ấy, thế giới có thêm một điều đáng để anh gìn giữ. Chúc mừng sinh nhật em, Đặng Khánh Linh, chúc cho em gặp thật nhiều may mắn, hạnh phúc và luôn đồng hành cùng anh trên con đường này nhé.</p>
+                        <p class="signature">Yêu em nhiều lắm,<br>❤️ Người yêu của em - Nguyễn Chí Cảnh ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo gallery section -->
+        <section class="photos-section scroll-reveal">
+            <h2>Những Khoảnh Khắc Tuyệt Vời</h2>
+            <div class="photo-gallery">
+                <div class="photo-frame">
+                    <img src="./1.jpg" alt="Ảnh kỷ niệm 1" class="photo">
+                    <div class="photo-overlay">
+                        <p>Khoảnh khắc ngọt ngào</p>
+                    </div>
+                </div>
+                <div class="photo-frame">
+                    <img src="./2.jpg" alt="Ảnh kỷ niệm 2" class="photo">
+                    <div class="photo-overlay">
+                        <p>Tình yêu vĩnh cửu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday wishes section -->
+        <section class="wishes-section scroll-reveal">
+            <div class="birthday-cake">🎂</div>
+            <h2>Chúc Người Anh Yêu Tuổi Mới</h2>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <div class="wish-icon">🌟</div>
+                    <p>Luôn tỏa sáng như ngôi sao</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">🌹</div>
+                    <p>Mãi mãi xinh đẹp như bông hoa</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">💖</div>
+                    <p>Hạnh phúc ngập tràn mỗi ngày</p>
+                </div>
+                <div class="wish-card">
+                    <div class="wish-icon">🦋</div>
+                    <p>Tự do bay cao theo ước mơ</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Audio player (hidden) -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="./music.mp3" type="audio/mpeg">
+        <!-- Fallback: bạn có thể thay bằng link nhạc tình yêu khác -->
+    </audio>
+
+    <!-- Music control button -->
+    <button class="music-control" id="musicControl">
+        <span class="music-icon">🎵</span>
+        <span class="music-text">Phát nhạc</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
