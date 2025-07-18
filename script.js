@@ -205,10 +205,15 @@ document.addEventListener('touchstart', function(e) {
 });
 
 document.addEventListener('touchmove', function(e) {
-    // Prevent bounce effect on iOS
-    if (e.touches[0].clientY > touchStartY) {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const currentY = e.touches[0].clientY;
+
+    // Nếu đang ở top và kéo xuống => chặn bounce
+    if (scrollTop === 0 && currentY > touchStartY) {
         e.preventDefault();
     }
+
+    touchStartY = currentY; // Cập nhật lại để không bị lệch lần sau
 }, { passive: false });
 
 // Performance optimization: throttle scroll events
